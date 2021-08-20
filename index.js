@@ -1,7 +1,6 @@
 //         JS EXERCISES
 
 // 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
-
 // 22) Create an object with properties such name, surname, email
 
 // 23) Delete Email from the previously created object
@@ -17,3 +16,11 @@
 let x ="John"
 let y = "Doe"
 console.log(`${x} <> ${y}`)
+
+let userProperties = {
+  name: "Matt",
+  surname: "Bones",
+  email: "potatoFactory67@gmail.com",
+  hasDriversLicence: true,
+  age: 27
+}
