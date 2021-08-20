@@ -3,8 +3,8 @@
 // 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
 // 22) Create an object with properties such name, surname, email
 // 23) Delete Email from the previously created object
-
 // 24) Create an array with 10 strings in it
+
 // 25) Print in the console every string in the previous array
 // 26) Create an array with 100 random numbers in it
 // 27) Wrote a function to get the MAX and the MIN from the previously created array
@@ -27,3 +27,4 @@ let userProperties = {
 
 delete userProperties.email
 
+let myArryOfTenStrins = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
