@@ -75,16 +75,14 @@ console.log(higherSumValue(secondArray))
 
 // 31) Get element with ID "container" from the page
 // 32) Get every "td" from the page
-
-// 33) !DONE    Create a cycle that prints the text inside every td of the page
-
 // 34) Write a function to change the heading of the page
 // 35) Write a function to add an extra row to the table
-
-// 36) Write a function to add the class "test" to each row in the table
-
-// 37) Write a function to add a red background to every link in the page
 // 38) Console log "Page loaded" when the page is correctly loaded
+
+// 33) !DONE    Create a cycle that prints the text inside every td of the page
+// 36) !DONE    Write a function to add the class "test" to each row in the table
+// 37) !DONE    Write a function to add a red background to every link in the page
+
 // 39) Write a function to add new items to a UL
 // 40) Write a function to empty a list
 
@@ -112,4 +110,22 @@ const addAnotherRow = function() {
   cell3.innerHTML = "More cells";
   cell4.innerHTML = "More cells";
   cell5.innerHTML = "More cells";
+}
+
+// 35 !FULLY DONE
+const addClassTest = function() {
+  let eachRow = document.getElementsByTagName("tr")
+  eachRow.classList.add("test")
+}
+
+
+const addRedBackgroundForLink = function() {
+  let allLinks = document.querySelectorAll("a")
+  for(let i = 0; i < allLinks; i++){
+    allLinks[i].style.backgroundColor = "red";
+  }
+}
+
+window.onload = function() {
+  console.log("Page loaded!")
 }
