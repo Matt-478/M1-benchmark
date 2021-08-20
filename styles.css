@@ -19,3 +19,7 @@ table {
   border: 4px solid rgb(105, 54, 105);
   border-radius: 10px
 }
+
+p {
+  margin: 10px 10px;
+}
