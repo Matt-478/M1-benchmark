@@ -77,10 +77,12 @@ console.log(higherSumValue(secondArray))
 // 32) Get every "td" from the page
 
 // 33) !DONE    Create a cycle that prints the text inside every td of the page
-// 34) Write a function to change the heading of the page
 
+// 34) Write a function to change the heading of the page
 // 35) Write a function to add an extra row to the table
+
 // 36) Write a function to add the class "test" to each row in the table
+
 // 37) Write a function to add a red background to every link in the page
 // 38) Console log "Page loaded" when the page is correctly loaded
 // 39) Write a function to add new items to a UL
@@ -95,4 +97,19 @@ let everyTDNode = document.getElementsByTagName("td")
 const changeHeading = function() {
   let heading = document.getElementsByTagName('h1')[0]
   heading.style.color = "red"
+}
+
+const addAnotherRow = function() {
+  let table = document.querySelector("table")
+  let row = table.insertRow(4);
+  let cell1 = row.insertCell(0);
+  let cell2 = row.insertCell(1);
+  let cell3 = row.insertCell(2);
+  let cell4 = row.insertCell(3);
+  let cell5 = row.insertCell(4)
+  cell1.innerHTML = "More cells";
+  cell2.innerHTML = "More cells";
+  cell3.innerHTML = "More cells";
+  cell4.innerHTML = "More cells";
+  cell5.innerHTML = "More cells";
 }
