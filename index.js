@@ -82,8 +82,8 @@ console.log(higherSumValue(secondArray))
 // 33) !DONE    Create a cycle that prints the text inside every td of the page
 // 36) !DONE    Write a function to add the class "test" to each row in the table
 // 37) !DONE    Write a function to add a red background to every link in the page
+// 39) !DONE    Write a function to add new items to a UL
 
-// 39) Write a function to add new items to a UL
 // 40) Write a function to empty a list
 
 
@@ -124,6 +124,15 @@ const addRedBackgroundForLink = function() {
   for(let i = 0; i < allLinks; i++){
     allLinks[i].style.backgroundColor = "red";
   }
+}
+
+
+// kinda works, after certain amount of iterations replaces old values
+const addListItem = function() {
+  let ul = document.querySelector("ul")
+  let li = document.querySelector("li")
+  document.createElement("li").innerText="hi hi hi"
+  ul.appendChild(li);
 }
 
 window.onload = function() {
